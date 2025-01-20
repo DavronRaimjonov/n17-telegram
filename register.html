@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telegram &middot; Log in</title>
+    <title>Telegram &middot; Register</title>
     <link rel="stylesheet" href="./src/output.css" />
-
     <link rel="shortcut icon" href="./assets/img/fav.png" type="image/x-icon" />
   </head>
   <body>
@@ -13,8 +12,17 @@
       <div
         class="container2 flex flex-col gap-[40px] justify-center items-center h-full"
       >
-        <h1 class="text-[35px] font-[600] text-gray-300">Log in to Telegram</h1>
-        <form id="loginForm" class="flex flex-col gap-[20px] w-[350px]">
+        <h1 class="text-[35px] font-[600] text-gray-300">
+          Register to Telegram
+        </h1>
+        <form id="registerForm" class="flex flex-col gap-[20px] w-[350px]">
+          <input
+            required
+            id="username"
+            class="w-full border border-[#2b5278] text-white rounded-md p-[10px] bg-transparent"
+            type="text"
+            placeholder="Username"
+          />
           <input
             required
             id="phone_number"
@@ -31,16 +39,17 @@
             placeholder="password"
           />
           <button
-            class="bg-[#2b5278] p-[10px] rounded-md text-white active:scale-[.98] hover:bg-[#336ca5] transition duration-[.2s]"
+            id="register"
+            class="bg-[#2b5278] flex items-center justify-center p-[10px] rounded-md text-white active:scale-[.98] hover:bg-[#336ca5] transition duration-[.2s]"
             type="submit"
           >
-            Log in
+            Register
           </button>
-          <a class="text-white" href="./register.html">Register ?</a>
+          <a class="text-white" href="./login.html">Login ?</a>
         </form>
       </div>
     </section>
 
-    <script type="module" src="./js/login.js"></script>
+    <script type="module" src="./js/register.js"></script>
   </body>
 </html>
